@@ -1,0 +1,163 @@
+@import url('file:///home/rwithik/.cache/wal/colors.css');
+
+body {
+  background-color: var(--color0);
+  color: white;
+  font-family: 'Noto Sans';
+  height: 100%;
+  line-height: 3vh;
+  width: 99%;
+}
+
+main {
+  display: none;
+}
+
+h1 {
+  font-size: 5vh;
+  color: var(--color4);
+}
+
+li {
+  padding: 1%;
+  font-size: 2.4vh;
+  margin: 0;
+  display: inline-block;
+  transition: all .25s linear;
+  border-radius: 5px;
+}
+
+ul {
+  list-style-type: none;
+  list-style: none;
+  display: block;
+  width: 80%;
+}
+
+a {
+  color: var(--color10);
+  text-decoration: none;
+  transition: all .25s linear;
+}
+
+a:hover {
+  color: var(--color15);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--color1);
+  color: var(--color0);
+  opacity: 0.4;
+}
+
+ul hr {
+  opacity: 0.8;
+  transition: all 0.5s linear;
+}
+
+li:hover~hr, a:hover~hr {
+  border-color: white;
+}
+
+li:not(.heading):hover {
+  background-color: var(--color12);
+}
+
+
+
+/*Classes*/
+/*=======*/
+
+
+.main-list{
+  padding-left: 20vw;
+  padding-top: 15vh;
+  width: 70vw;
+}
+
+.heading {
+  font-size: 2.6vh;
+  font-weight: bold;
+  color: var(--color6);
+  transition: all 0.2s linear;
+}
+
+.reddit {
+  font-size: 2.6vh;
+  font-weight: bold;
+  color: var(--color6);
+  border-radius: 5px;
+}
+
+.heading:hover {
+  color: white;
+}
+
+.navbar {
+  background-color: grey;
+  width: 99%;
+  height: 8vh;
+  position: fixed;
+}
+
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.navbar ul li {
+  display: block;
+  background-color: var(--color6);
+  height: 5vh;
+  float: left;
+  padding: 0.5vw;
+  position: relative;
+  transition-duration: 0.5s;
+}
+
+.navbar ul li ul {
+  visibility: hidden;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  display: none;
+}
+
+.navbar ul li:hover > ul,
+.navbar ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.navbar ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+.date {
+  font-size: 16vh;
+  display: none;
+  color: var(--color4);
+  text-align: center;
+  margin-top: 40vh;
+}
+
+.datetimepara{
+  transition: all .5s linear;
+}
+
+.datetimepara:hover {
+  color: var(--color7);
+}
+
+/*Sandbox*/
+/*-------*/
+
+#secret-sandbox {
+  display: none;
+}
